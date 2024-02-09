@@ -1,0 +1,52 @@
+#1
+thislist = ["apple", "banana", "cherry"]
+for x in thislist:
+  print(x)
+
+#2
+thislist = ["apple", "banana", "cherry"]
+for i in range(len(thislist)):
+  print(thislist[i])
+
+#3
+thislist = ["apple", "banana", "cherry"]
+i = 0
+while i < len(thislist):
+  print(thislist[i])
+  i = i + 1
+
+#4
+thislist = ["apple", "banana", "cherry"]
+[print(x) for x in thislist]
+
+#5
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+newlist = []
+
+for x in fruits:
+  if "a" in x:
+    newlist.append(x)
+
+print(newlist)
+
+#6
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+
+newlist = [x for x in fruits if "a" in x]
+
+print(newlist)
+
+
+#7
+newlist = [x for x in range(10)]
+
+#8
+newlist = [x for x in range(10) if x < 5]
+
+#9
+newlist = [x.upper() for x in fruits]
+
+#10
+newlist = ['hello' for x in fruits]
+
+
